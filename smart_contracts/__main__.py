@@ -2,11 +2,14 @@ import logging
 import sys
 from pathlib import Path
 
+from algokit_utils.config import config
 from dotenv import load_dotenv
 
 from smart_contracts.config import contracts
 from smart_contracts.helpers.build import build
 from smart_contracts.helpers.deploy import deploy
+
+config.configure(debug=True, trace_all=True)
 
 logging.basicConfig(
     level=logging.DEBUG, format="%(asctime)s %(levelname)-10s: %(message)s"

@@ -115,15 +115,20 @@ name = "algokit-utils"
 version = "2.1.2"
 description = "Utilities for Algorand development for use by AlgoKit"
 optional = false
-python-versions = ">=3.10,<4.0"
-files = [
-    {file = "algokit_utils-2.1.2-py3-none-any.whl", hash = "sha256:dac98f46bd1d11e82ed70086afa3560eb8fecba155818df0f1e8ac19ed8c95b3"},
-]
+python-versions = "^3.10"
+files = []
+develop = false
 
 [package.dependencies]
-deprecated = ">=1.2.14,<2.0.0"
-httpx = ">=0.23.1,<0.24.0"
-py-algorand-sdk = ">=2.4.0,<3.0.0"
+deprecated = "^1.2.14"
+httpx = "^0.23.1"
+py-algorand-sdk = "^2.4.0"
+
+[package.source]
+type = "git"
+url = "https://github.com/algorandfoundation/algokit-utils-py.git"
+reference = "feat/debugger-support"
+resolved_reference = "7e2a35723b76500a63006454eae19b2568ebd51a"
 
 [[package]]
 name = "anyio"
@@ -1950,4 +1955,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "5dd26572be4fbbf8af916e3c49010eb96660cd0af453c3db1b29c4a3af5971b1"
+content-hash = "867cf2142ac17ea49fdb685b601ca32f6f44e8d935eef7bf469ccc38dd2c1aee"

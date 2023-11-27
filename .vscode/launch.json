@@ -2,6 +2,14 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "avm",
+      "request": "launch",
+      "name": "Debug AVM Transactions",
+      "simulateTraceFile": "${workspaceFolder}/${command:PickSimulateTraceFile}",
+      // "programSourcesDescriptionFile": "${workspaceFolder}/.algokit/sources/sources.avm.json",
+      "stopOnEntry": true
+    },
+    {
       "name": "Build & Deploy Beaker application",
       "type": "python",
       "request": "launch",
